@@ -1,4 +1,5 @@
 import './App.scss';
+import Recipies from './components/Recipies';
 
 function App() {
   return (
@@ -6,6 +7,11 @@ function App() {
       <header className="App-header">
         hghghgh
       </header>
+
+      {/* // recipie list section */}
+      <section>
+        <Recipies/>
+      </section>
     </div>
   );
 }
