@@ -1,4 +1,5 @@
 import React from 'react';
+import {FaSearch} from 'react-icons/fa'
 const Hero = () => {
     return (
         <>
@@ -6,6 +7,9 @@ const Hero = () => {
             <div className="hero-image">
                 <form>
                     <input className="form-control search" placeholder="Search Recipe"/>
+                    <span id="search" >
+                    <FaSearch />
+                    </span>
                 </form>
 
             </div>
