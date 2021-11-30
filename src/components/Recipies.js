@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
 
+import Modal from 'react-modal';
+import RecipeDetails from './RecipeDetails';
+
 const Recipies = () => {
 
 
     const [recipes, setRecipes] = useState(['',''])
+    const [openModal, setOpenModal] = useState(false)
 
     useEffect(()=>{
         getRecipes()
@@ -14,6 +18,23 @@ const Recipies = () => {
     const getRecipes = () => {
         setRecipes(['','','','','','',])
     }
+
+
+    const customStyles = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor:'white',
+            borderRadius:'.8rem',
+        },
+        overlay: {
+            backgroundColor: 'rgba(7, 7, 7, 0.574)'
+          },
+    };
 
     return (
         <div style={{
@@ -25,9 +46,20 @@ const Recipies = () => {
 
             <div className="recipes-list">
                 {
-                    recipes.map(recipe=>  <RecipeCard  recipe={recipe} /> )
+                    recipes.map(recipe=>  <RecipeCard setOpenModal={setOpenModal} recipe={recipe} /> )
                 }
             </div>
+
+
+            <Modal
+                isOpen={openModal}
+                onRequestClose={()=> setOpenModal(false)}
+                style={customStyles}
+                contentLabel="Example Modal"
+                
+            >
+                <RecipeDetails/>
+            </Modal>
         </div>
     );
 };
