@@ -2,4 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
+
+
+@import './styles/hero.scss';
+@import './styles/recipeCard.scss';
+@import './styles/recipes.scss';
