@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
 
 const Recipies = () => {
 
+
     const [recipes, setRecipes] = useState(['',''])
+
+    useEffect(()=>{
+        getRecipes()
+    },[])
 
 
     const getRecipes = () => {
-
+        setRecipes(['',''])
     }
 
     return (
