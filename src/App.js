@@ -8,8 +8,10 @@ function App() {
 
       {/* // recipie list section */}
       <section>
+
         <Hero/>
         <Recipies/>
+       
       </section>
     </div>
   );
