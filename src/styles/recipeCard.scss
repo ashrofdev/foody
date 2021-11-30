@@ -1,0 +1,32 @@
+.recipe {
+    position: relative;
+    transition: all .5s;
+    
+
+   
+
+    &  img {
+        border-radius: .7rem;
+        box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.342);
+        cursor: pointer;
+        transition: all .3s;
+
+
+        &:hover{
+            filter: brightness(60%);
+        }
+    }
+
+    &  .details {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        text-align: right;
+        color: white;
+        visibility: hidden;
+    }
+
+    &:hover .details{
+        visibility: visible;
+    }
+}
