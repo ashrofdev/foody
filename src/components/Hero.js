@@ -1,10 +1,17 @@
 import React from 'react';
-
 const Hero = () => {
     return (
-        <div>
-            hero
+        <>
+        <div className="hero-container">
+            <div className="hero-image">
+                <form>
+                    <input className="form-control search" placeholder="Search Recipe"/>
+                </form>
+
+            </div>
+            
         </div>
+        </>
     );
 };
 
