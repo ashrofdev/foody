@@ -1,16 +1,15 @@
 import './App.scss';
 import Recipies from './components/Recipies';
-
+import Hero from './components/Hero';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        hghghgh
-      </header>
+  
 
       {/* // recipie list section */}
       <section>
-        <Recipies/>
+        {/* <Recipies/> */}
+        <Hero/>
       </section>
     </div>
   );
