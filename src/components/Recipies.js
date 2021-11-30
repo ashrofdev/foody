@@ -12,7 +12,7 @@ const Recipies = () => {
 
 
     const getRecipes = () => {
-        setRecipes(['',''])
+        setRecipes(['','','','','','',])
     }
 
     return (

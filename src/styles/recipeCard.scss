@@ -1,0 +1,40 @@
+.recipe {
+    position: relative;
+    border-radius: .7rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.342);
+    transition: all .5s;
+    
+
+   
+
+    &  img {
+        border-radius: .7rem;
+        box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.342);
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    &  .details {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        text-align: right;
+        color: white;
+        visibility: hidden;
+        transform: translateY(200%);
+        transition: all .3s;
+
+        &  p {
+            // color: orangered;
+        }
+    }
+
+    &:hover .details{
+        visibility: visible;
+        transform: none;
+    }
+    &:hover img{
+        filter: brightness(40%);
+    }
+}
