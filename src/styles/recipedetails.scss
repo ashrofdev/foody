@@ -1,0 +1,111 @@
+.modal-container{
+    width: 60vw;
+    height: 90vh;
+    .detail-top{
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        gap: 3%;
+        img{
+            border-radius: 20px;
+        }
+        .top-right{
+            .rating{
+                margin-top: 5%;
+                .rates{
+                    margin-top: 1%;
+                    display: flex;
+                    justify-content: space-between;
+                    .thumb{
+                        #like{
+                            font-size: 25px;
+                            color: rgb(33, 248, 62);   
+                        }
+                        #dislike{
+                            font-size: 25px;
+                            color: rgb(248, 33, 33);   
+                        }
+                        #star{
+                            font-size: 25px;
+                            color: rgb(248, 225, 96);   
+                        }
+                        display: flex;
+                        align-items: center;
+                       
+                    }
+                }
+
+            }
+            .credit{
+                margin-top: 5%;
+                .names{
+                    margin-top: 1%;
+                    
+                }
+
+            }
+            
+            .video-link{
+               
+                margin-top: 5%;
+                a{
+                    #video{
+                        font-size: 25px;
+                    }
+                    display: flex;
+                    align-items: center;
+                    color: rgb(247, 118, 14);
+                    text-decoration: none;
+                    transition: ease 0.3s;
+                    &:hover{
+                        color: rgba(247, 119, 14, 0.767);
+                        font-size: 16.5px;
+                        transition: ease 0.3s;
+                    }
+                }
+            }
+            .nutrition{
+                ul{
+                    margin-left: 2%;
+                    list-style: none;
+                    li{
+                        margin: 3% 0%;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .details{
+        margin-top: 1%;
+        .detail-bottom{
+            margin: 2% 0%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            .ingredients{
+               
+                ol{
+                    padding: 0% 5%;
+                    li{
+                        margin: 2% 0%;
+                    }
+                }
+            }
+    
+            .steps{
+               
+                ol{
+                    padding: 0% 5%;
+                    li{
+                        margin: 2% 0%;
+                    }
+                }
+    
+            }
+
+        }
+        
+    }
+
+}
+
