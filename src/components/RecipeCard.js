@@ -13,6 +13,10 @@ const RecipeCard = ({setOpenModal}) => {
                     fontSize:'.6rem'
                 }}>2 words note</p>
             </div>
+            <div className="hover-details">
+                
+                <p>View</p>
+            </div>
         </div>
     );
 };

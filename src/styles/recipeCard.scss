@@ -13,6 +13,7 @@
         box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.342);
         cursor: pointer;
         transition: all .3s;
+        filter: brightness(80%);
     }
 
     &  .details {
@@ -20,21 +21,33 @@
         bottom: 1rem;
         right: 1rem;
         text-align: right;
-        color: white;
-        visibility: hidden;
-        transform: translateY(200%);
-        transition: all .3s;
-
-        &  p {
-            // color: orangered;
-        }
+        color: whitesmoke;  
     }
-
     &:hover .details{
+        visibility: hidden;
+        transform: none;
+        
+    }
+    &:hover .hover-details {
         visibility: visible;
         transform: none;
     }
+    .hover-details {
+        position: absolute;
+        border: 1.5px solid whitesmoke;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 2% 5%;
+        top: 50%;
+        left:40%;
+        color: whitesmoke;
+        visibility: hidden;
+        transform: translateY(200%);
+        transition: all .3s;  
+    }
+
+   
     &:hover img{
-        filter: brightness(40%);
+        filter: brightness(35%);
     }
 }
